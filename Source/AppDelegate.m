@@ -114,7 +114,6 @@ void prefSaveNoQState(FSEventStreamRef streamRef)
 
 @synthesize mStatusBar;
 @synthesize mStatusMenu;
-@synthesize mStartMenu;
 
 #define UDKEY_SETTINGS_LIST   @"NoQSettings"
 
@@ -176,10 +175,6 @@ void prefSaveNoQState(FSEventStreamRef streamRef)
     [self loadSettings];
     [self setIcon];
 
-    // Initialize checkbox
-    mStart = 0;  // always start disabled
-    [mStartMenu setState:mStart];
-    
     // Version check
     mVersionCheck = [[LTVersionCheck alloc] initWithAppName:@"NoQ"
                      withAppVersion:appVersion
@@ -188,14 +183,7 @@ void prefSaveNoQState(FSEventStreamRef streamRef)
 
 - (void)setIcon
 {
-    if (mStart == 1)
-    {
-        [mStatusBar setImage:[NSImage imageNamed:@"icon_16x16.png"]];
-    }
-    else
-    {
-        [mStatusBar setImage:[NSImage imageNamed:@"noq.png"]];
-    }
+    [mStatusBar setImage:[NSImage imageNamed:@"icon_16x16.png"]];
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification
@@ -223,19 +211,6 @@ void prefSaveNoQState(FSEventStreamRef streamRef)
 - (IBAction)showAboutBox:(id)sender
 {
     [[AboutWindowController defaultController].window orderFront:self];
-}
-
-- (IBAction)startAction:(id)sender
-{
-    (mStart == 0) ? (mStart = 1) : (mStart = 1);
-    [mStartMenu setState:mStart];
-    
-    if (mStart == 1)
-    {
-        [self startThread];
-    }
-    
-    [self setIcon];
 }
 
 - (void)loadSettings

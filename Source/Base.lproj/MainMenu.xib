@@ -14,21 +14,13 @@
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customObject id="494" customClass="AppDelegate">
             <connections>
-                <outlet property="mStartMenu" destination="q1Y-WV-ywI" id="U6f-Tw-rM3"/>
                 <outlet property="mStatusMenu" destination="536" id="543"/>
             </connections>
         </customObject>
         <customObject id="420" customClass="NSFontManager"/>
         <menu id="536">
             <items>
-                <menuItem title="Start" id="q1Y-WV-ywI" userLabel="Start">
-                    <modifierMask key="keyEquivalentModifierMask"/>
-                    <connections>
-                        <action selector="startAction:" target="494" id="iWR-6I-emH"/>
-                    </connections>
-                </menuItem>
-                <menuItem isSeparatorItem="YES" id="bM5-NS-wK0"/>
-                <menuItem title="Preferences..." id="3ov-sE-UQL" userLabel="Preferences">
+                <menuItem title="Settings..." id="3ov-sE-UQL" userLabel="Settings">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
                         <action selector="showPreferences:" target="494" id="IES-tC-ENF"/>

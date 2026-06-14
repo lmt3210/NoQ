@@ -32,9 +32,6 @@
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 {
-    // Operating variables
-    int mStart;
-    
     // Preferences
     NSString *mPath1;
     NSString *mPath2;
@@ -49,9 +46,7 @@
 
 @property (strong, nonatomic) NSStatusItem *mStatusBar;
 @property (strong) IBOutlet NSMenu *mStatusMenu;
-@property (strong) IBOutlet NSMenuItem *mStartMenu;
 
-- (IBAction)startAction:(id)sender;
 - (IBAction)showAboutBox:(id)sender;
 - (IBAction)showPreferences:(id)sender;
 

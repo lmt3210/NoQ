@@ -20,7 +20,6 @@
 		468A27362F7C243500248BC1 /* icon_512x512@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 468A272E2F7C243500248BC1 /* icon_512x512@2x.png */; };
 		468A27372F7C243500248BC1 /* icon_256x256@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 468A272C2F7C243500248BC1 /* icon_256x256@2x.png */; };
 		468A27382F7C243500248BC1 /* icon_128x128.png in Resources */ = {isa = PBXBuildFile; fileRef = 468A27292F7C243500248BC1 /* icon_128x128.png */; };
-		468A273A2F7C246E00248BC1 /* noq.png in Resources */ = {isa = PBXBuildFile; fileRef = 468A27392F7C246E00248BC1 /* noq.png */; };
 		468A27592F7E94C200248BC1 /* PreferencesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 468A27572F7E94C200248BC1 /* PreferencesController.m */; };
 		468A275A2F7E94C200248BC1 /* PreferencesController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 468A27582F7E94C200248BC1 /* PreferencesController.xib */; };
 		46A771042545BA6900748EE1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46A771032545BA6900748EE1 /* Images.xcassets */; };
@@ -51,7 +50,6 @@
 		468A272C2F7C243500248BC1 /* icon_256x256@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_256x256@2x.png"; sourceTree = "<group>"; };
 		468A272D2F7C243500248BC1 /* icon_512x512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_512x512.png; sourceTree = "<group>"; };
 		468A272E2F7C243500248BC1 /* icon_512x512@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_512x512@2x.png"; sourceTree = "<group>"; };
-		468A27392F7C246E00248BC1 /* noq.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = noq.png; sourceTree = "<group>"; };
 		468A27562F7E94C200248BC1 /* PreferencesController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PreferencesController.h; sourceTree = "<group>"; };
 		468A27572F7E94C200248BC1 /* PreferencesController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PreferencesController.m; sourceTree = "<group>"; };
 		468A27582F7E94C200248BC1 /* PreferencesController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PreferencesController.xib; sourceTree = "<group>"; };
@@ -93,7 +91,6 @@
 			isa = PBXGroup;
 			children = (
 				4629C83B2F82EFA0000809A7 /* help */,
-				468A27392F7C246E00248BC1 /* noq.png */,
 				468A27252F7C243500248BC1 /* icon_16x16.png */,
 				468A27262F7C243500248BC1 /* icon_16x16@2x.png */,
 				468A27272F7C243500248BC1 /* icon_32x32.png */,
@@ -245,7 +242,6 @@
 				468A27312F7C243500248BC1 /* icon_16x16.png in Resources */,
 				468A27322F7C243500248BC1 /* icon_256x256.png in Resources */,
 				468A27332F7C243500248BC1 /* icon_32x32.png in Resources */,
-				468A273A2F7C246E00248BC1 /* noq.png in Resources */,
 				468A27342F7C243500248BC1 /* icon_512x512.png in Resources */,
 				468A27352F7C243500248BC1 /* icon_16x16@2x.png in Resources */,
 				468A275A2F7E94C200248BC1 /* PreferencesController.xib in Resources */,
@@ -393,7 +389,7 @@
 				CODE_SIGN_ENTITLEMENTS = NoQ/NoQ.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 87P6MK8E3E;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -401,7 +397,7 @@
 				INFOPLIST_FILE = "Resources/NoQ-Info.plist";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MARKETING_VERSION = 1.0.4;
+				MARKETING_VERSION = 1.0.5;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.larrymtaylor.NoQ;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -417,7 +413,7 @@
 				CODE_SIGN_ENTITLEMENTS = NoQ/NoQ.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 87P6MK8E3E;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -425,7 +421,7 @@
 				INFOPLIST_FILE = "Resources/NoQ-Info.plist";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MARKETING_VERSION = 1.0.4;
+				MARKETING_VERSION = 1.0.5;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.larrymtaylor.NoQ;
 				PRODUCT_NAME = "$(TARGET_NAME)";
